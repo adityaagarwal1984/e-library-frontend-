@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compact Registration Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,  black, white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .registration-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ff7e5f;
+      margin-bottom: 10px;
+    }
+
+    .input-box,.select-box,
+    .textarea-box {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 2px solid #ff7e5f;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .input-box:focus,
+    .select-box:focus,
+    .textarea-box:focus {
+      border-color: #feb47b;
+      outline: none;
+    }
+
+    .register-button {
+      background-color: #ff7e5f;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 90%;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .register-button:hover {
+      background-color: #feb47b;
+    }
+
+    .textarea-box {
+      resize: vertical;
+      height: 60px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="registration-container">
+    <h2>Register</h2>
+    <form action="#" method="post">
+      <input type="text" class="input-box" placeholder="Name" minlength="10" required><br>
+      <input type="password" class="input-box" placeholder="Password" minlength="5" required><br>
+      <input type="email" class="input-box" placeholder="Email" required><br>
+      <input type="tel" class="input-box" placeholder="Phone Number" maxlength="10" pattern="[0-9]{10}" required><br>
+
+      <input type="date" class="input-box" placeholder="Date of Birth (DD/MM/YYYY)" required pattern="\d{2}/\d{2}/\d{4}" title="Enter date in DD/MM/YYYY format"><br>
+
+      <select class="select-box" required>
+        <option value="" disabled selected>Select Sex</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+      <select class="select-box" required>
+        <option value="" disabled selected>Select language</option>
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="other">Other</option>
+      </select><br>
+      
+
+      <textarea class="textarea-box" placeholder="Address" required></textarea><br>
+      <button type="submit" class="register-button">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>

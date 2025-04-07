@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Catalogue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,black,white);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2{
+      color: #ff7e5f;
+      font-size: 30px;
+      margin: 20px 0;
+      
+    }
+
+    .catalogue-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .book-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .book-card img {
+      max-width: 100%;
+      height: auto;
+      border-bottom: 2px solid #ff7e5f;
+      padding-bottom: 10px;
+    }
+
+    .book-details {
+      margin: 10px 0;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .book-details p {
+      margin: 10px 0;
+    }
+
+    .price {
+      color: #ff7e5f;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      background-color: #ff7e5f;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .add-to-cart:hover {
+      background-color: #feb47b;
+    }
+    .book-card img {
+  width: 150px; /* Fixed width for all images */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures images fill the space while maintaining aspect ratio */
+  border-bottom: 2px solid #ff7e5f;
+  padding-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+  <h2>Books For Civil..</h2>
+
+  <!-- Catalogue Section -->
+  <div class="catalogue-container" id="catalogue">
+    <!-- Civil Books -->
+    <div class="book-card civil">
+      <img src="/images/civil1.jpg" alt="Civil Book 1">
+      <div class="book-details">
+        <p><strong>Title:</strong> Structural Analysis</p>
+        <p><strong>Author:</strong> Robert Chrishtopher Hibbeler</p>
+        <p><strong>Publisher:</strong> Pearson</p>
+      </div>
+      <p class="price">₹850</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="book-card civil">
+      <img src="/images/civil2.jpg" alt="Civil Book 2">
+      <div class="book-details">
+        <p><strong>Title:</strong> Geotechnical Engineering</p>
+        <p><strong>Author:</strong> Shashi.k.Gulati</p>
+        <p><strong>Publisher:</strong> S.Chand</p>
+      </div>
+      <p class="price">₹950</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>

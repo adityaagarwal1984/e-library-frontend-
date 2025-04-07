@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, black,white); /* Beautiful gradient background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #ff7e5f;
+      margin-bottom: 20px;
+    }
+
+    .input-box {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ff7e5f;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .input-box:focus {
+      border-color: #feb47b;
+      outline: none;
+    }
+
+    .login-button {
+      background-color: #ff7e5f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 85%;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .login-button:hover {
+      background-color: #feb47b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Welcome Back!</h2>
+    <input type="text" class="input-box" placeholder="Username" required><br>
+    <input type="password" class="input-box" placeholder="Password" required><br>
+    <button class="login-button">Login</button>
+  </div>
+
+</body>
+</html>
